@@ -60,7 +60,6 @@ document.getElementById("download-btn").addEventListener("click", function () {
       // Notify the user that the download has been triggered
       alert("Downloading file...");
       return;
-
     }
 
     // Validate the URL format using a regular expression
@@ -72,7 +71,10 @@ document.getElementById("download-btn").addEventListener("click", function () {
 
     // Check if the URL is a YouTube link
     if (url.includes("youtube.com") || url.includes("youtu.be")) {
-      alert("Downloading YouTube videos feature is not supported yet.");
+      // Send the request to your backend server for YouTube download
+      window.location.href = `https://cone-file-downloader.vercel.app/${encodeURIComponent(
+        url
+      )}`;
       return;
     }
 
