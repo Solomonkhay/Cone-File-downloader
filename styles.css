@@ -60,8 +60,14 @@ body {
     color: var(--main-color);
     /* margin-top: 20px; */
 }
+.intro h1 {
+    font-size: 25px;
+    color: #403AB6;
+
+}
 
 .intro p {
+    margin-top: -10px;
     color: #fFFFFFFf;
 }
 
@@ -131,6 +137,19 @@ body {
    border: black 2px solid;
     
 }
+#title {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px; */
+    font-family: "Abril Fatface", sans-serif;
+    font-size: 20px;
+    color: var(--main-color);
+}
 
 .content-container {
     display: flex; 
@@ -144,6 +163,7 @@ body {
     border-radius: 5px;
     padding-bottom: 0px;
     overflow: hidden;
+
 }
 
 .vector {

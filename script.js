@@ -1,20 +1,26 @@
 /*loader script*/
+//create a variable to select the loader and main elements
 const loader = document.querySelector(".loader");
 const main = document.querySelector(".main");
 
+// Check if the loader and main elements exist
 if (loader && main) {
   window.onload = function () {
     loading();
   };
 
+  // Function to handle the loading animation
+  // This function will be called when the window is fully loaded
   function loading() {
+    //let the loader fade out
     setTimeout(() => {
       loader.style.opacity = 0;
       loader.style.display = "none";
 
+      //let the main content fade in
       main.style.display = "block";
-      setTimeout(() => (main.style.opacity = 1), 50);
-    }, 10000);
+      setTimeout(() => (main.style.opacity = 1),50);
+    },  10000);
   }
 } else {
   console.error("Loader or main element not found!");
@@ -31,6 +37,7 @@ document.getElementById("download-btn").addEventListener("click", function () {
   if (!url) {
     alert("Please enter a valid URL.");
     return;
+
   }
 
   try {
@@ -53,6 +60,7 @@ document.getElementById("download-btn").addEventListener("click", function () {
       // Notify the user that the download has been triggered
       alert("Downloading file...");
       return;
+
     }
 
     // Validate the URL format using a regular expression
@@ -106,6 +114,7 @@ document.getElementById("download-btn").addEventListener("click", function () {
     console.error("Error while downloading the file:", error);
     alert(
       "An error occurred while trying to download the file. Please try again."
+      
     );
   }
 });
