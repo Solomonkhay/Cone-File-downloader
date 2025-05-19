@@ -72,7 +72,7 @@ document.getElementById("download-btn").addEventListener("click", function () {
     // Check if the URL is a YouTube link
     if (url.includes("youtube.com") || url.includes("youtu.be")) {
       // Send the request to your backend server for YouTube download
-      window.location.href = `https://cone-file-downloader.vercel.app/${encodeURIComponent(
+      window.location.href = `https://cone-file-downloader.onrender.com/${encodeURIComponent(
         url
       )}`;
       return;
