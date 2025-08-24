@@ -1,6 +1,0 @@
-This favicon was generated using the following font:
-
-- Font Title: Taviraj
-- Font Author: undefined
-- Font Source: https://fonts.gstatic.com/s/taviraj/v14/ahcev8Cj3ylylTXzTOwT6-xRhWa8q0v8ag.ttf
-- Font License: undefined)
